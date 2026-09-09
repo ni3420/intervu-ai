@@ -1,0 +1,20 @@
+[project]
+name = "server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "bullmq>=3.2.1",
+    "fastapi>=0.141.1",
+    "ollama>=0.6.2",
+    "python-multipart>=0.0.32",
+    "uvicorn>=0.52.4",
+]
+
+[project.scripts]
+server = "server:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
